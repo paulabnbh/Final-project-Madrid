@@ -19,11 +19,11 @@ with tipo_plan:
     sel2 = st.selectbox('Elige categoría', ocio.columns[9::])
 
 with puntuacion:
-    sel1= st.selectbox('Elige puntuación',
-                        ocio.puntuacion.unique())
+    sel1= st.multiselect('Elige puntuación',
+                        ocio.puntuacion.unique().tolist())
 
 
 
-ocio_filtered = ocio[(ocio.puntuacion == sel1) & (ocio[sel2] == 1)]
+ocio_filtered = ocio[(ocio.puntuacion.isin(sel1)) & (ocio[sel2] == 1)]
 ocio_def = ocio_filtered[['nombre', 'ubicacion', 'barrio', 'puntuacion']]
-ocio_def
+st.dataframe(ocio_def, width=1200)

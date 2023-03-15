@@ -37,4 +37,4 @@ for i in range(0, len(ocio)):
     folium.Marker([float(ocio.lat[i]), float(ocio.long[i])], 
                         popup=ocio.nombre[i],
                         icon = folium.Icon(color = 'blue')).add_to(mapa)
-st_folium(mapa, height = 550, width = 1000)
+st_folium(mapa, height = 550, width = 1200)

@@ -32,20 +32,3 @@ with col2:
 
 
 
-
-#elif app_mode == 'Restaurantes':
-    #rests = pd.read_csv('../restaurantes/restaurantes-mad-dummies.csv')
-
-    #tipo_cocina, puntuacion, precio
-
-    #with filtros:
-    #columnas = rests.columns
-    #selection = st.multiselect('Filtrar Columnas', columnas)
-
-
-
-#st.sidebar.image(Image.open('../proyecto/imagenes/chulapa1.png'))
-#st.sidebar.subheader('Buscar por zona')
-#st.sidebar.image(Image.open('../proyecto/imagenes/mapa_madrid.jpg'))
-
-

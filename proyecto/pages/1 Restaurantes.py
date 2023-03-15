@@ -15,18 +15,18 @@ rests = pd.read_csv('csv/restaurantes-def.csv')
 barrio, puntuacion, tipo_cocina, precio  = st.columns(4)
 
 with barrio:
-    sel1 = st.selectbox('Elige barrio', rests.barrio.unique())
+    sel1 = st.multiselect('Elige barrio', rests.barrio.unique(), default=['Cortes','Sol','Recoletos'])
 
 with tipo_cocina:
-    sel2 = st.selectbox('Elige tipo de cocina', rests.columns[11::])
+    sel2 = st.selectbox('Elige tipo de cocina', rests.columns[11::].tolist())
 
 with puntuacion:
-    sel3 = st.selectbox('Elige puntuación', rests.puntuacion.unique())
+    sel3 = st.multiselect('Elige puntuación', rests.puntuacion.unique().tolist())
 
 with precio:
     sel4 = st.selectbox('Elige rango de precio', rests.precio.unique())
 
-filtered_rests = rests[(rests.barrio == sel1) & (rests[sel2] == 1) & (rests.puntuacion == sel3) & (rests.precio == sel4)]
+filtered_rests = rests[(rests.barrio.isin(sel1)) & (rests[sel2] == 1) & (rests.puntuacion.isin(sel3)) & (rests.precio == sel4)]
 def_rests = filtered_rests[['nombre', 'direccion_completa', 'puntuacion', 'precio']]
-st.dataframe(def_rests)
+st.dataframe(def_rests, width = 1200)
 
