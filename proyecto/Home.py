@@ -12,7 +12,7 @@ import folium
 
 st.set_page_config(page_title='DisfrutaMadrid', page_icon="✈️", layout="wide")
 
-st.image('imagenes/logo-mad.png', use_column_width = True)
+st.image('proyecto/imagenes/logo-mad.png', use_column_width = True)
 
 
 col1, col2 = st.columns(2)
