@@ -12,7 +12,8 @@ import folium
 
 st.set_page_config(page_title='DisfrutaMadrid • Mapa', page_icon="🗺️", layout="wide")
 
-st.image('imagenes/logo-mad.png', width = 300)
+st.image('proyecto/imagenes/logo-mad.png', width = 300)
+
 
 st.title('¿Dónde te apetece ir hoy?')
 rest = pd.read_csv('mapa-madrid/restaurantes_mapa.csv')
