@@ -8,7 +8,7 @@ import datetime
 import time
 #from streamlit_folium import st_folium
 #from streamlit_folium import folium_static
-import folium
+#import folium
 
 st.set_page_config(page_title='DisfrutaMadrid', page_icon="✈️", layout="wide")
 
