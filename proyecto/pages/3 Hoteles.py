@@ -25,7 +25,7 @@ with precio:
                             value=[0, hoteles.precio.max()])   
 
 with puntuacion:
-    sel3 = st.multiselect('Elige puntuación', hoteles.puntuacion.unique().tolist(), default = ['5.0'])
+    sel3 = st.multiselect('Elige puntuación', hoteles.puntuacion.unique().tolist())
 
 with servicios:
     cols = hoteles.columns[10::].tolist()
