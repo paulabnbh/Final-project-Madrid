@@ -11,7 +11,7 @@ st.set_page_config(page_title='DisfrutaMadrid • Hoteles', page_icon="🏨", la
 st.image('proyecto/imagenes/logo-mad.png', width = 300)
 
 st.title('¿Dónde nos alojamos?')
-hoteles = pd.read_csv('csv/hoteles-def.csv')
+hoteles = pd.read_csv('proyecto/csv/hoteles-def.csv')
 
 barrio, precio, puntuacion, servicios = st.columns(4)
 

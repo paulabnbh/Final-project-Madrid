@@ -12,7 +12,7 @@ st.image('proyecto/imagenes/logo-mad.png', width = 300)
 
 st.title('¿Dónde comemos?')
 
-rests = pd.read_csv('csv/restaurantes-def.csv')
+rests = pd.read_csv('proyecto/csv/restaurantes-def.csv')
 
 barrio, puntuacion, tipo_cocina, precio  = st.columns(4)
 

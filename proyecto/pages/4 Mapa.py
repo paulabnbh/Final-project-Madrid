@@ -16,9 +16,9 @@ st.image('proyecto/imagenes/logo-mad.png', width = 300)
 
 
 st.title('¿Dónde te apetece ir hoy?')
-rest = pd.read_csv('mapa-madrid/restaurantes_mapa.csv')
-hotel = pd.read_csv('mapa-madrid/hotel_mapa.csv')
-ocio = pd.read_csv('mapa-madrid/planes_mapa.csv')    
+rest = pd.read_csv('proyecto/mapa-madrid/restaurantes_mapa.csv')
+hotel = pd.read_csv('proyecto/mapa-madrid/hotel_mapa.csv')
+ocio = pd.read_csv('proyecto/mapa-madrid/planes_mapa.csv')    
 
 mapa = folium.Map(location=[40.4167278, -3.7033387], zoom_start=15, tiles = 'Stamen Terrain')
 

@@ -11,7 +11,7 @@ st.set_page_config(page_title='DisfrutaMadrid • Ocio', page_icon="☀️", lay
 st.image('proyecto/imagenes/logo-mad.png', width = 300)
 
 st.title('¿Qué hacemos?')
-ocio = pd.read_csv('csv/planes-def.csv')
+ocio = pd.read_csv('proyecto/csv/planes-def.csv')
 
 tipo_plan, puntuacion = st.columns(2)
 
