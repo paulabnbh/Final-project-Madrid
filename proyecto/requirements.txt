@@ -1,6 +1,6 @@
 pandas
+numpy
 streamlit
 numpy
 folium
-pylab
 streamlit_folium
