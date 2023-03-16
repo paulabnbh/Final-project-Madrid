@@ -17,7 +17,7 @@ rests = pd.read_csv('proyecto/csv/restaurantes-def.csv')
 barrio, puntuacion, tipo_cocina, precio  = st.columns(4)
 
 with barrio:
-    sel1 = st.multiselect('Elige barrio', rests.barrio.unique(), default=['Cortes','Sol','Recoletos'])
+    sel1 = st.multiselect('Elige barrio', rests.barrio.unique())
 
 with tipo_cocina:
     cols = rests.columns[11::].tolist()

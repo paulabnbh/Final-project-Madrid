@@ -17,7 +17,7 @@ barrio, precio, puntuacion, servicios = st.columns(4)
 
 with barrio:
     datos = hoteles.barrio.unique().tolist()
-    sel1 = st.multiselect('Elige barrio', datos, default = ['Cortes', 'Sol', 'Recoletos'])
+    sel1 = st.multiselect('Elige barrio', datos)
 
 with precio:
     selmin, selmax = st.select_slider('Elige rango de precio',
