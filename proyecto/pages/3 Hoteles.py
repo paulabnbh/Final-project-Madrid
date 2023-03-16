@@ -29,7 +29,7 @@ with puntuacion:
 
 with servicios:
     cols = hoteles.columns[10::].tolist()
-    sel4 = st.multiselect('Elige servicios', cols, default = ['Aparcamiento', 'Servicio de lavandería', 'Desayuno bufé'])
+    sel4 = st.multiselect('Elige servicios', cols)
 
 
 hoteles_filtered = hoteles[(hoteles['barrio'].isin(sel1)) & (hoteles['puntuacion'].isin(sel3)) & (hoteles.precio > selmin) & (hoteles.precio < selmax)]
