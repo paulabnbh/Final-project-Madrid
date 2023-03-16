@@ -8,7 +8,7 @@ import datetime
 
 st.set_page_config(page_title='DisfrutaMadrid • Hoteles', page_icon="🏨", layout="wide")
 
-st.image('imagenes/logo-mad.png', width = 300)
+st.image('proyecto/imagenes/logo-mad.png', width = 300)
 
 st.title('¿Dónde nos alojamos?')
 hoteles = pd.read_csv('csv/hoteles-def.csv')

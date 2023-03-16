@@ -8,7 +8,7 @@ import datetime
 
 st.set_page_config(page_title='DisfrutaMadrid • Ocio', page_icon="☀️", layout="wide")
 
-st.image('imagenes/logo-mad.png', width = 300)
+st.image('proyecto/imagenes/logo-mad.png', width = 300)
 
 st.title('¿Qué hacemos?')
 ocio = pd.read_csv('csv/planes-def.csv')
