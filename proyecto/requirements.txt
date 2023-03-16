@@ -4,3 +4,4 @@ streamlit
 numpy
 folium
 streamlit_folium
+PIL
