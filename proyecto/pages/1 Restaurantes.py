@@ -8,7 +8,7 @@ import datetime
 
 st.set_page_config(page_title='DisfrutaMadrid - Restaurante', page_icon="🍽️", layout="wide")
 
-st.image(Image.open('imagenes/logo-mad.png'), width = 300)
+st.image('imagenes/logo-mad.png', width = 300)
 
 st.title('¿Dónde comemos?')
 
