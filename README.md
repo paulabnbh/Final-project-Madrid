@@ -2,7 +2,7 @@
 ![portada](https://github.com/paulabnbh/final-project-madrid/blob/main/proyecto/imagenes/logo-mad.png)
 
 ## Estructura
-1) Las carpetas **restaurantes**, **turismo** y **hoteles** contienen el código para la extracción de los datos y so posterior limpieza.
+1) Las carpetas **restaurantes**, **turismo** y **hoteles** contienen el código para la extracción de los datos y su posterior limpieza.
 2) La carpeta **presentacion** contiene la presentación del proyecto.
 3) La carpeta **proyecto** contiene lo siguiente:
 + en **.streamlit** todo la configuración estética de la web.
