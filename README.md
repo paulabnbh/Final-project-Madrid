@@ -19,7 +19,7 @@ El objetivo de este proyecto es crear una app que ofrezca diferentes planes de o
 
 El proceso de extracción de datos se ha hecho a través de la técnica de webscraping de tripadvisor.com, de donde he obtenido todos los datos posibles sobre **restaurantes**, **hoteles** y **planes de ocio**. Durante la propia extracción se han cargado los datos a MongoDB.
 
-Una vez extraidos todos los datos, hemos procedido a la limpieza de estos, teniendo siempre en cuenta el objetivo del del proyecto: poder realizar filtrado sobre estas bases de datos.
+Una vez extraidos todos los datos, hemos procedido a la limpieza de estos, teniendo siempre en cuenta el objetivo del del proyecto: poder filtrar sobre estas bases de datos.
 
 ### VISUALIZACIÓN
 
